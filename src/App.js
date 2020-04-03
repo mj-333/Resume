@@ -29,7 +29,7 @@ class App extends Component
                     <li className="phone"><i className="fas fa-phone"></i><a href="tel:9786543330">{resume.phone}</a></li>
                     <li className="website"><i className="fas fa-globe"></i><a href={resume.website}>{resume.website}</a></li>
                     <li className="linkedin"><i className="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mohanraj-krishnamoorthy-841877137" >linkedin.com/in/mohanraj-krishnamoorthy-841877137</a></li>
-                    <li className="github"><i className="fab fa-github"></i>github.com/username</a></li>
+                    <li className="github"><i className="fab fa-github"></i><a href="#">github.com/username</a></li>
                     <li className="twitter"><i className="fab fa-twitter"></i><a href={resume.twitterURL}>{resume.twitter}</a></li>
                 </ul>
             </div>
@@ -93,7 +93,7 @@ class App extends Component
                     
                 </div>
                 <div className="item">
-                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/">DevStudio</a></span> - 
+                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/">DevStudio</a></span> 
                     <span className="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
                 </div>
                 <div className="item">
@@ -103,7 +103,7 @@ class App extends Component
                     <span className="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" >Atom</a></span> - <span className="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
                 </div>
                 <div className="item">
-                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/">Delta</a></span> - <span className="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
+                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank">Delta</a></span> - <span className="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
                 </div>
             </section>
             
