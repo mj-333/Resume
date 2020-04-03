@@ -5,13 +5,7 @@ import Experience from './Experience';
 
 class App extends Component
 {
-  renderExperiences(){
-    let resultArray = [];
-    resume.experiences.map((item, i) => {
-      resultArray.push(<Experience item={item} key={i} />);
-    });
-    return resultArray;
-  }
+  
   render(){
     console.log(resume);
     return (
@@ -79,7 +73,7 @@ class App extends Component
             <section className="section experiences-section">
                 <h2 className="section-title"><span className="icon-holder"><i className="fas fa-briefcase"></i></span>Experiences</h2>
                 
-                {this.renderExperiences()}
+                
                 
             </section>
             
@@ -103,7 +97,7 @@ class App extends Component
                     <span className="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" >Atom</a></span> - <span className="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
                 </div>
                 <div className="item">
-                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank">Delta</a></span> - <span className="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
+                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/">Delta</a></span> - <span className="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
                 </div>
             </section>
             
