@@ -1,0 +1,100 @@
+{
+	"name": "Mohanraj K",
+	"email": "mohanrajmj777@gmail.com",
+	"phone": "9786543330",
+	"website": "programmingbuddy.club",
+	"twitter": "@mohanrajmj777",
+	"twitterURL": "https://twitter.com/mohanrajmj777",
+	"linkedin":"https://www.linkedin.com/in/mohanraj-krishnamoorthy-841877137",
+	"experiences" : [
+		{
+			"title" : "Member Technical Staff",
+			"period": "Dec 2017 - Present",
+			"company": "ZOHO",
+			"companyURL": "https://www.zoho.com/",
+			"details": "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo."
+		}
+	],
+	"projects": [
+		{
+			"name":"Velocity",
+			"url": "http://programmingbuddy.club",
+			"detail": "A responsive website template designed to help startups promote, market and sell their products."
+		},
+		{
+			"name":"DevStudio",
+			"url": "http://programmingbuddy.club",
+			"detail": "A responsive website template designed to help startups promote, market and sell their products."
+		},
+		{
+			"name":"Tempo",
+			"url": "http://programmingbuddy.club",
+			"detail": "A responsive website template designed to help startups promote, market and sell their products."
+		},
+		{
+			"name":"Atom",
+			"url": "http://programmingbuddy.club",
+			"detail": "A responsive website template designed to help startups promote, market and sell their products."
+		},
+		{
+			"name":"Delta",
+			"url": "http://programmingbuddy.club",
+			"detail": "A responsive website template designed to help startups promote, market and sell their products."
+		}
+	],
+	"skills": [
+		{
+			"name": "Java",
+			"percent": "98%"
+		},
+		{
+			"name": "Javascript",
+			"percent": "90%"
+		},
+		{
+			"name": "React",
+			"percent": "80%"
+		},
+		{
+			"name": "HTML5 & CSS",
+			"percent": "99%"
+		},
+		{
+			"name": "SQL",
+			"percent": "70%"
+		},
+		{
+			"name": "Pythn",
+			"percent": "85%"
+		}
+	],
+	"education": [
+		{
+			"degree": "BE in Computer Science",
+			"university": "SREC",
+			"period": "2014 - 2018"
+		}
+	],
+	"languages": [
+		{
+			"name":"Tamil",
+			"details": "Native"
+		},
+		{
+			"name":"English",
+			"details": "Professional"
+		}
+	],
+	"interests": [
+		"Football",
+		"Painting",
+		"Cooking",
+		"Coding"
+	]
+}
+
+
+
+
+
+
