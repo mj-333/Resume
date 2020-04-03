@@ -14,7 +14,7 @@ class Experience extends Component
                          <div className="company"><a href={this.props.item.companyURL}>{this.props.item.company}</a></div>
                     </div>
                     <div className="details">
-                       {this.props.item.details}
+                       
                     </div>
                 </div>
 			);
