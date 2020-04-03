@@ -5,7 +5,13 @@ import Experience from './Experience';
 
 class App extends Component
 {
-  
+  renderExperiences(){
+    let resultArray = [];
+    resume.experiences.map((item, i) => {
+      resultArray.push(<Experience item={item} key={i} />);
+    });
+    return resultArray;
+  }
   render(){
     console.log(resume);
     return (
@@ -23,7 +29,7 @@ class App extends Component
                     <li className="phone"><i className="fas fa-phone"></i><a href="tel:9786543330">{resume.phone}</a></li>
                     <li className="website"><i className="fas fa-globe"></i><a href={resume.website}>{resume.website}</a></li>
                     <li className="linkedin"><i className="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mohanraj-krishnamoorthy-841877137" >linkedin.com/in/mohanraj-krishnamoorthy-841877137</a></li>
-                    <li className="github"><i className="fab fa-github"></i>github.com/username</li>
+                    <li className="github"><i className="fab fa-github"></i>github.com/username</a></li>
                     <li className="twitter"><i className="fab fa-twitter"></i><a href={resume.twitterURL}>{resume.twitter}</a></li>
                 </ul>
             </div>
@@ -73,7 +79,7 @@ class App extends Component
             <section className="section experiences-section">
                 <h2 className="section-title"><span className="icon-holder"><i className="fas fa-briefcase"></i></span>Experiences</h2>
                 
-                
+                {this.renderExperiences()}
                 
             </section>
             
