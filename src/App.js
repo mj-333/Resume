@@ -5,13 +5,7 @@ import Experience from './Experience';
 
 class App extends Component
 {
-  renderExperiences(){
-    let resultArray = [];
-    resume.experiences.map((item, i) => {
-      resultArray.push(<Experience item={item} key={i} />);
-    });
-    return resultArray;
-  }
+  
   render(){
     console.log(resume);
     return (
@@ -79,7 +73,7 @@ class App extends Component
             <section className="section experiences-section">
                 <h2 className="section-title"><span className="icon-holder"><i className="fas fa-briefcase"></i></span>Experiences</h2>
                 
-                {this.renderExperiences()}
+                
                 
             </section>
             
