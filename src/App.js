@@ -1,10 +1,17 @@
 import React,{Component} from 'react';
 import './App.css';
 import resume from './resume.json';
+import Experience from './Experience';
 
 class App extends Component
 {
-
+  renderExperiences(){
+    let resultArray = [];
+    resume.experiences.map((item, i) => {
+      resultArray.push(<Experience item={item} key={i} />);
+    });
+    return resultArray;
+  }
   render(){
     console.log(resume);
     return (
@@ -20,9 +27,9 @@ class App extends Component
                 <ul className="list-unstyled contact-list">
                     <li className="email"><i className="fas fa-envelope"></i><a href="mailto: yourname@email.com">{resume.email}</a></li>
                     <li className="phone"><i className="fas fa-phone"></i><a href="tel:9786543330">{resume.phone}</a></li>
-                    <li className="website"><i className="fas fa-globe"></i><a href={resume.website}>{resume.website}</a></li>
+                    <li className="website"><i className="fas fa-globe"></i><a href={resume.website} target="_blank">{resume.website}</a></li>
                     <li className="linkedin"><i className="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mohanraj-krishnamoorthy-841877137">linkedin.com/in/mohanraj-krishnamoorthy-841877137</a></li>
-                    <li className="twitter"><i className="fab fa-twitter"></i><a href={resume.twitterURL}>{resume.twitter}</a></li>
+                    <li className="twitter"><i className="fab fa-twitter"></i><a href={resume.twitterURL} target="_blank">{resume.twitter}</a></li>
                 </ul>
             </div>
             <div className="education-container container-block">
@@ -64,14 +71,14 @@ class App extends Component
             <section className="section summary-section">
                 <h2 className="section-title"><span className="icon-holder"><i className="fas fa-user"></i></span>Career Profile</h2>
                 <div className="summary">
-                    <p>Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/">download this free resume/CV template here</a>. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
+                    <p>Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank">download this free resume/CV template here</a>. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
                 </div>
             </section>
             
             <section className="section experiences-section">
                 <h2 className="section-title"><span className="icon-holder"><i className="fas fa-briefcase"></i></span>Experiences</h2>
                 
-              
+                {this.renderExperiences()}
                 
             </section>
             
@@ -85,17 +92,17 @@ class App extends Component
                     
                 </div>
                 <div className="item">
-                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/">DevStudio</a></span> - 
+                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> - 
                     <span className="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
                 </div>
                 <div className="item">
-                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/">Tempo</a></span> - <span className="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
+                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank">Tempo</a></span> - <span className="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
                 </div>
                 <div className="item">
-                    <span className="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/">Atom</a></span> - <span className="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
+                    <span className="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Atom</a></span> - <span className="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
                 </div>
                 <div className="item">
-                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/">Delta</a></span> - <span className="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
+                    <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank">Delta</a></span> - <span className="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
                 </div>
             </section>
             
