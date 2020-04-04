@@ -20,7 +20,7 @@ class App extends Component
             <div className="profile-container">
                 <img className="profile" src="assets/MJ.jpeg" alt="" width="180" height="180"/>
                 <h1 className="name">{resume.name}</h1>
-                <h3 className="tagline">Full Stack Developer</h3>
+                <h3 className="tagline">Developer</h3>
             </div>
             
             <div className="contact-container container-block">
@@ -34,11 +34,7 @@ class App extends Component
             </div>
             <div className="education-container container-block">
                 <h2 className="container-block-title">Education</h2>
-                <div className="item">
-                    <h4 className="degree">MSc in Computer Science</h4>
-                    <h5 className="meta">University of London</h5>
-                    <div className="time">2011 - 2012</div>
-                </div>
+              
                 <div className="item">
                     <h4 className="degree">BSc in Applied Mathematics</h4>
                     <h5 className="meta">Bristol University</h5>
